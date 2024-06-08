@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZELA KUMAŞ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+            color: black;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: 450px; /* Video yüksekliğini ayarlayın */
+            overflow: hidden;
+        }
+
+        .header video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        .header .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            background-color: rgba(0, 0, 0, 0.3); /* Siyah blok opaklığı */
+            z-index: 0;
+        }
+
+        .header .overlay {
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+            color: whitesmoke;
+            padding: 50px;
+            font-size: 54px;
+            font-weight: bold;
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .header .slogan {
+            position: absolute;
+            bottom: 7px;
+            left: 20px;
+            color: floralwhite;
+            padding: 55px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            z-index: 1;
+        }
+
+        .content {
+            background-color: white; /* Yeni eklenen stil */
+            padding: 20px; /* Yeni eklenen stil */
+            margin-top: -50px; /* Yeni eklenen stil */
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%; /* Değiştirildi */
+            border-bottom: 1px solid lightgray; /* Yeni eklenen stil */
+            padding-bottom: 20px; /* Yeni eklenen stil */
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 300px; /* Değiştirildi */
+            height: auto;
+            margin: 10px;
+        }
+
+        .product .description {
+            flex: 1; /* Değiştirildi */
+            margin: 10px;
+        }
+
+        .contact {
+            background-color: lightgray;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: black;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* Mobil cihazlar için medya sorguları */
+        @media screen and (max-width: 768px) {
+            .product {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .product img {
+                max-width: 40%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <video autoplay muted loop>
+            <source src="https://assets.mixkit.co/videos/14776/14776-720.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="overlay">ZELA KUMAŞ</div>
+        <div class="slogan">Yüksek kalite - Uygun fiyat</div>
+    </div>
+
+    <div class="content">
+        <div class="product">
+            <img src="https://i.ibb.co/jgLvFFd/gabardin.jpg" alt="Kumaş 1">
+            <div class="description">
+                <h2>Gabardin Kumaş</h2>
+                <p>Fiyatlar yakında belirtilecektir</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://i.ibb.co/QQXPpnP/hamkumas.jpg" alt="Kumaş 2">
+            <div class="description">
+                <h2>Ham Kumaş</h2>
+                <p>Fiyatlar yakında belirtilecektir</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://i.ibb.co/1b1FqcH/astar-ceplik.webp" alt="Kumaş 3">
+            <div class="description">
+                <h2>Astar-Ceplik Kumaş</h2>
+                <p>Fiyatlar yakında belirtilecektir</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>İletişim: erolticaret2@hotmail.com</p>
+        <p>Telefon: 0533 267 5545</p>
+        <h2>© 2024 Zela Kumaş. All Rights Reserved.</h2>
+    </div>
+</body>
+</html>
